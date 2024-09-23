@@ -1,0 +1,15 @@
+---
+import Card from './Card.astro'
+import services from './Services'
+---
+
+<section class="w-full h-fit py-5 flex flex-col">
+    <h2 class="text-center my-10 font-bold text-4xl">NUESTROS SERVICIOS</h2>
+    <div class="flex justify-center gap-20 items-center">
+        {
+            services.map(service => (
+                <Card title={service} />
+            ))
+        }
+    </div>
+</section>
