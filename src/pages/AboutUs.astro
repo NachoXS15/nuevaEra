@@ -1,8 +1,12 @@
 ---
+import Icon from "../components/Icon.astro";
 import Layout from "../layouts/Layout.astro";
+import staff from '../config/staff'
+import HeaderS from "../components/HeaderS.astro";
 ---
 
 <Layout title="Sobre nosotros">
+    <HeaderS />
     <section class="w-3/4 m-auto mt-20 mb-32 text-white text-center">
         <h2 class="mb-5 text-5xl font-bold">VISIÓN</h2>
         <p class="text-2xl">En Nueva Era, creemos que el futuro ya está acá, y estamos decididos a liderar
@@ -11,11 +15,20 @@ import Layout from "../layouts/Layout.astro";
             contenido digital personalizado con las herramientas más avanzadas del mercado</p>
     </section>
     <section class="w-3/4 m-auto mt-32 mb-20 text-white text-center">
-        <h2 class="mb-5 text-5xl font-bold">VISIÓN</h2>
+        <h2 class="mb-5 text-5xl font-bold">MISIÓN</h2>
         <p class="text-2xl">En Nueva Era, creemos que el futuro ya está acá, y estamos decididos a liderar
             este nuevo paradigma. Nuestra visión es convertirnos en referentes en la creación
             e implementación de soluciones tecnológicas de última generación, integrando
             contenido digital personalizado con las herramientas más avanzadas del mercado</p>
     </section>
-    
+    <section class="h-fit flex flex-col items-center justify-center text-white text-center mt-32">
+        <h2 class="text-5xl text-center font-bold">NUESTRO EQUIPO</h2>
+        <div class="mt-10 flex flex-wrap justify-center items-center gap-5 md:gap-20">
+            {
+                staff.map((person => (
+                    <Icon nameStaff={person.title} img={person.img} />
+                )))
+            }
+        </div>
+    </section>
 </Layout>
