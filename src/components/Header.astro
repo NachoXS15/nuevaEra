@@ -1,12 +1,16 @@
-<header class="w-full min-h-screen flex flex-col md:flex-row justify-center md:justify-around items-center bg-gradient-to-b from-darkblue to-cyan">
-    <img src="/assets/logo.png" class="animate-fade-in" width="400" alt="">
-    <div class="flex flex-col gap-10 md:items-end md:justify-end md:animate-slide-out-left">
+---
+import ButtonC from "./ButtonC.astro";
+---
+
+<header class="w-full min-h-screen flex flex-col md:flex-row justify-center md:justify-around items-center ">
+    <a href="/"><img src="/assets/logo.png" class="animate-fade-in cursor-pointer hover:scale-110 transition" width="400" alt=""></a>
+    <div class="mb-14 flex flex-col gap-10 md:items-end md:justify-end md:animate-slide-out-left">
         <ul class="md:flex md:flex-col md:items-end text-white text-4xl md:text-5xl md:text-end">
             <li class="font-bold text-center">PERSONALIZACIÓN</li>
             <li class="font-bold text-center">INNOVACÍON</li>
             <li class="font-bold text-center">CREATIVIDAD</li>
             <li class="font-bold text-center">VANGUARDIA</li>
         </ul>
-        <button class="px-7 py-3 bg-darkblue rounded-full text-white text-3xl font-medium uppercase">Conocenos</button>
+        <ButtonC text="CONOCENOS" size="text-3xl" link="/" />
     </div>
 </header>

@@ -7,7 +7,7 @@ const { title } = Astro.props;
 ---
 
 <div
-	class="w-40 shadow-custom h-52 flex flex-col items-center py-8 px-6 rounded-2xl border-darkblue hover:scale-110 transition"
+	class="w-40 shadow-custom h-52 bg-white flex flex-col items-center py-8 px-6 rounded-2xl border-darkblue hover:scale-110 transition"
 >
 	<svg
 		xmlns="http://www.w3.org/2000/svg"
@@ -28,9 +28,6 @@ const { title } = Astro.props;
 
 <style>
 	.shadow-custom {
-		background: #e0e0e0;
-		box-shadow:
-			7px 7px 14px #bababa,
-			-7px -7px 14px #ffffff;
+		box-shadow: 0px 3px 5px -1px;
 	}
 </style>

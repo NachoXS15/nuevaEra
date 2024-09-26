@@ -3,9 +3,9 @@ import Card from './Card.astro'
 import services from './Services'
 ---
 
-<section class="w-full h-fit py-20 flex flex-col">
-    <h2 class="text-center my-5 font-bold text-4xl">NUESTROS SERVICIOS</h2>
-    <div class="w-full flex flex-wrap justify-center gap-5 md:gap-20 items-center">
+<section class="w-full h-fit pb-20 flex flex-col">
+    <h2 class="text-center my-5 font-bold text-5xl text-white">NUESTROS SERVICIOS</h2>
+    <div class="w-full flex flex-wrap justify-center gap-5 md:gap-10 items-center">
         {
             services.map(service => (
                 <Card title={service} />
