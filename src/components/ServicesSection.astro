@@ -8,7 +8,7 @@ import services from '../config/Services'
     <div class="w-full flex flex-wrap justify-center gap-5 md:gap-10 items-center">
         {
             services.map(service => (
-                <Card title={service.title} />
+                <Card title={service.title} img={service.img} />
             ))
         }
     </div>
