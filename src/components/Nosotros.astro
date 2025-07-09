@@ -3,9 +3,12 @@ import ButtonC from "./ButtonC.astro"
 ---
 <section class="w-3/4 m-auto flex text-white mt-32 mb-56 flex-col justify-center items-center gap-8 md:flex-row ">
     <div style='background-image: url("/assets/foto.jpg");' class="bg-cover bg-center rounded-lg w-full px md:1/2 h-[320px]"></div>
-    <div class=" w-full md:w-1/2 text-xl flex flex-col items-start justify-start gap-4">
+    <div class=" w-full md:w-3/4 text-xl flex flex-col items-start justify-start gap-4">
         <h2 class="text-3xl font-bold">¿QUIÉNES SOMOS?</h2>
-        <p class="w-">Somos Nueva Era, una empresa que no solo nace con el objetivo de revolucionar la forma en que interactuamos con el mundo digital, sino que también está comprometida en ser el aliado estratégico que las empresas y organizaciones que necesitan en la era de la transformación tecnológica. </p>
+        <div>
+            <p class="w-">Nueva Era nace con un propósito claro: Ser el aliado estratégico de instituciones, empresas, organismos públicos y privados en su camino hacia la transformación tecnológica.</p>
+            <p class="w-">Nos posicionamos como una empresa tecnológica con visión de startup, que aporta soluciones creativas y escalables a sectores como el industrial, el turístico, el minero y el de servicios.</p>
+        </div>
         <ButtonC text="SABER MÁS" size="text-xl" link="/AboutUs" class:list="self-end" />
     </div>
 </section>

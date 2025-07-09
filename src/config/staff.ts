@@ -1,7 +1,7 @@
 const staff = [
-    {"title": "Nacho", "img": "/assets/foto.jpg"},
-    {"title": "Marco", "img": "/assets/foto.jpg"},
-    {"title": "Ale", "img": "/assets/foto.jpg"}
+    {"title": "Pablo Puglisi", "img": "/assets/foto.jpg", "desc": "CEO"},
+    {"title": "Marco Dominguez", "img": "/assets/foto.jpg", "desc": "CEO"},
+    {"title": "Sofia Fonteñez", "img": "/assets/foto.jpg", "desc": "CEO"}
 ]
 
 export default staff

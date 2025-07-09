@@ -1,15 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import ServicesSection from '../components/ServicesSection.astro';
+import ServicesSection from '../components/ServicesSection';
 import Nosotros from '../components/Nosotros.astro';
 import Header from '../components/Header.astro';
 import HeaderS from '../components/HeaderS.astro';
+import Staff from '../components/Staff.astro';
 ---
 
 <Layout title="Nueva Era">
 	<Header />
 	<HeaderS />
-	<ServicesSection />
+	<ServicesSection client:load />
+	<Staff />
 	<Nosotros />
 </Layout>
