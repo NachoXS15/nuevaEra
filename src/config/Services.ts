@@ -9,7 +9,7 @@ const services: selectedService[] = [
             "Ideal para simular experiencias en recorridos o procesos sin límites físicos ni geográficos.",
             "Aplicaciones prácticas:Paseos virtuales por destinos, Entrenamiento de personal, Mostrar instalaciones, juegos, etc"
         ],
-        display: ""
+        display: "/assets/services/VR-360.webp"
     },
     {
         "title": "Pantalla Interactivas",
@@ -19,7 +19,7 @@ const services: selectedService[] = [
             "Claves para ferias, lobbies corporativos y presentaciones institucionales",
             "Aplicaciones prácticas: Mapas Interactivos, Información de eventos, Dashboards, Catálogos, Juegos, etc."
         ],
-        display: ""
+        display: "/assets/services/PANTALLA-TACTIL-1.webp"
     },
     {
         "title": "Holograma",
@@ -29,7 +29,7 @@ const services: selectedService[] = [
             "Ideal para comunicar marcas y visión de futuro.",
             "Proyección de logos, Elementos característicos del cliente, Mostrar piezas o maquinaria en 3D, etc"
         ],
-        display: ""
+        display: "/assets/services/HOLOGRAMA.webp"
     },
     {
         "title": "IA",
@@ -37,7 +37,7 @@ const services: selectedService[] = [
         desc:[
             "La IA permite automatizar procesos de atención, análisis de datos, personalización de contenidos y toma de decisiones inteligentes, mejorando la eficiencia y la experiencia del usuario.",
         ],
-        display: ""
+        display: "/assets/services/ia.webp"
     },
     {
         "title": "Realidad Aumentada",
@@ -45,7 +45,7 @@ const services: selectedService[] = [
         desc:[
             "La AR combina el mundo real con contenido digital en tiempo real. Es una herramienta poderosa para explicar información técnica o compleja de manera visual, accesible y atractiva.",
         ],
-        display: ""
+        display: "/assets/services/REALIDAD-AUMENTADA.webp"
     },
     {
         "title": "Activaciones Inmersivas",
@@ -53,7 +53,7 @@ const services: selectedService[] = [
         desc:[
             "Las activaciones inmersivas involucran todos los sentidos del usuario, creando un entorno emocionalmente poderoso que refuerza la conexión con la marca o proyecto.",
         ],
-        display: ""
+        display: "/assets/services/PANTALLA-TACTIL-2.webp"
     }
 ]
 

@@ -21,13 +21,17 @@ export default function ServicesSection() {
                 }
             </div>
             <article className="w-full md:w-3/4 mt-20 shadow-custom m-auto h-fit md:h-96 flex flex-col md:flex-row gap-5 bg-white rounded-2xl shadow-custom">
-                <div className="h-60 md:h-96 w-full md:w-2/6 rounded-2xl bg-slate-600"></div>
-                <div className="w-full md:w-4/6 py-10 md:py-0 md:mt-10 px-5 md:pr-5">
-                    <h2 className="font-bold uppercase text-4xl">{selectedService.title}</h2>
-                    {selectedService.desc.map(desc => (
-                        <p className="font-regular mb-4 text-xl">{desc}</p>
-                    ))}
-                    <a href="#servicios" className='text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
+                <div className="h-60 md:h-96 w-full md:w-2/6 flex items-center justify-center rounded-2xl bg-white">
+                    <img src={selectedService.display}  alt="" />
+                </div>
+                <div className="w-full max-h-full md:w-4/6 my-10 py-10 flex flex-col justify-between md:py-0 px-5 md:pr-5">
+                    <div>
+                        <h2 className="font-bold uppercase text-4xl">{selectedService.title}</h2>
+                        {selectedService.desc.map(desc => (
+                            <p className="font-regular mb-4 text-xl mt-3">{desc}</p>
+                        ))}
+                    </div>
+                    <a href="#servicios" className='w-fit text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
                 </div>
             </article>
         </section>
