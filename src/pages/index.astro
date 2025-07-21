@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ServicesSection from '../components/ServicesSection';
-import Nosotros from '../components/Nosotros.astro';
+import Nosotros from '../components/Nosotros';
 import Header from '../components/Header.astro';
 import HeaderS from '../components/HeaderS.astro';
 import Staff from '../components/Staff.astro';
@@ -12,5 +12,5 @@ import Staff from '../components/Staff.astro';
 	<HeaderS />
 	<ServicesSection client:load />
 	<Staff />
-	<Nosotros />
+	<Nosotros client:load />
 </Layout>

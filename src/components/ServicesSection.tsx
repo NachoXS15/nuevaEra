@@ -27,8 +27,8 @@ export default function ServicesSection() {
                 <div className="w-full max-h-full md:w-4/6 my-10 py-10 flex flex-col justify-between md:py-0 px-5 md:pr-5">
                     <div>
                         <h2 className="font-bold uppercase text-4xl">{selectedService.title}</h2>
-                        {selectedService.desc.map(desc => (
-                            <p className="font-regular mb-4 text-xl mt-3">{desc}</p>
+                        {selectedService.desc.map((desc, i) => (
+                            <p key={i} className="font-regular mb-4 text-xl mt-3">{desc}</p>
                         ))}
                     </div>
                     <a href="#servicios" className='w-fit text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
