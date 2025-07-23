@@ -3,10 +3,10 @@ import staff from "../config/staff"
 ---
 <section class="w-3/4 h-fit m-auto text-center">
     <h2 class="uppercase text-3xl mb-10 font-bold text-white">Nuestro Equipo</h2>
-    <div class="flex flex-wrap items-center justify-center md:gap-20">
+    <div class="flex flex-wrap items-center justify-center gap-10 md:gap-20">
         {staff.map(staff => (
             <article class="flex items-center justify-center flex-col">
-                <img class="md:w-64 md:h-64 w-44 h-44 rounded-full border-4 md:border-8 border-white" src={staff.img} alt="" />
+                <div class="md:w-64 md:h-64 w-44 h-44 rounded-full bg-cover bg-center border-4 md:border-8 border-white" style={{ backgroundImage: `url(${staff.img})` }} />
                 <h2 class="text-white text-2xl font-semibold mt-3">{staff.title}</h2>
                 <span class="text-white text-xl">{staff.desc}</span>
             </article>
