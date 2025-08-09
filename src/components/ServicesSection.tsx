@@ -10,11 +10,11 @@ export default function ServicesSection() {
     return (
         <section className="w-full px-5 md:px-0 h-fit pb-20 flex flex-col" id='servicios'>
             <h2 className="text-center my-5 font-bold text-4xl text-white">NUESTROS SERVICIOS</h2>
-            <div className="w-full flex flex-wrap justify-center gap-5 md:gap-14 items-center">
+            <div className="w-full flex flex-wrap justify-center gap-5 md:gap-14 items-center ">
                 {
                     services.map((service, i) => (
-                        <article key={i} onClick={() => setSelectedService(service)} className="shadow-custom w-36 h-48 shadow-custom hover:cursor-pointer bg-white flex flex-col items-center py-8 px-6 rounded-2xl border-darkblue hover:scale-110 transition">
-                            <img src={service.img} className="mb-2" alt="" />
+                        <article key={i} onClick={() => setSelectedService(service)} className="overflow-hidden shadow-custom w-36 h-48 shadow-custom hover:cursor-pointer bg-white flex flex-col items-center py-8 px-6 rounded-2xl border-darkblue hover:scale-110 transition">
+                            <img src={service.img} className="mb-2 " alt="" />
                             <h2 className="text-wrap text-center text-md font-semibold">{service.title}</h2>
                         </article>
                     ))
@@ -31,7 +31,7 @@ export default function ServicesSection() {
                             <p key={i} className="font-regular mb-4 text-xl mt-3">{desc}</p>
                         ))}
                     </div>
-                    <a href="#servicios" className='w-fit text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
+                    <a href="#servicios" id='staff' className='w-fit text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
                 </div>
             </article>
         </section>
