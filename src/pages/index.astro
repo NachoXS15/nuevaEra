@@ -5,12 +5,14 @@ import Nosotros from '../components/Nosotros';
 import Header from '../components/Header.astro';
 import HeaderS from '../components/HeaderS.astro';
 import Staff from '../components/Staff.astro';
+import Clients from '../components/Clients.astro';
 ---
 
 <Layout title="Nueva Era">
 	<Header />
 	<HeaderS />
 	<ServicesSection client:load />
+	<Clients />
 	<Staff />
 	<Nosotros client:load />
 </Layout>

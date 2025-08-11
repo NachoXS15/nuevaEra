@@ -31,7 +31,7 @@ export default function ServicesSection() {
                             <p key={i} className="font-regular mb-4 text-xl mt-3">{desc}</p>
                         ))}
                     </div>
-                    <a href="#servicios" id='staff' className='w-fit text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
+                    <a href="#servicios" className='w-fit text-white text-xl uppercase font-bold rounded-full px-5 py-2 bg-darkblue'>Más servicios</a>
                 </div>
             </article>
         </section>
