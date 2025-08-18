@@ -8,7 +8,7 @@ export default function ServicesSection() {
     const [selectedService, setSelectedService] = useState<selectedService>(services[1])
 
     return (
-        <section className="w-full px-5 md:px-0 h-fit pb-20 flex flex-col" id='servicios'>
+        <section className="w-full px-5 mb-15 md:px-0 h-fit pb-20 flex flex-col" id='servicios'>
             <h2 className="text-center my-5 font-bold text-4xl text-white">NUESTROS SERVICIOS</h2>
             <div className="w-full flex flex-wrap justify-center gap-5 md:gap-14 items-center ">
                 {
