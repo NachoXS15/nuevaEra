@@ -7,6 +7,6 @@ interface Props {
 
 const {text, size, link} = Astro.props
 ---
-<a href={link} class="border border-white px-5 py-3 text-center rounded-full text-white font-bold uppercase hover:scale-110 transition">
+<a href={link} class="border border-white px-3 md:px-5 py-3 text-center rounded-full text-white font-bold uppercase hover:scale-110 transition">
     <span class={size}>{text}</span>
 </a>
