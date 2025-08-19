@@ -18,7 +18,7 @@ export default function Nosotros() {
 
 
     return (
-        <section className="w-3/4 m-auto flex text-white my-32 flex-col justify-center items-center gap-8 xl:flex-row ">
+        <section className="w-3/4 m-auto flex text-white my-20 md:my-32 flex-col justify-center items-center gap-8 xl:flex-row ">
             <div className="bg-cover bg-center rounded-lg w-full px xl:w-1/2 relative overflow-hidden h-[320px]">
                 <div
                     className="w-full h-full flex transition-transform duration-700 ease-in-out"
