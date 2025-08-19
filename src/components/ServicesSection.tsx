@@ -10,7 +10,7 @@ export default function ServicesSection() {
     return (
         <section className="w-full px-3 mb-15 md:px-0 h-fit pb-20 flex flex-col" id='servicios'>
             <h2 className="text-center my-5 font-bold text-3xl md:text-4xl text-white">NUESTROS SERVICIOS</h2>
-            <div className="w-full flex flex-wrap justify-center gap-3 md:gap-14 items-center ">
+            <div className="w-full flex flex-wrap justify-center gap-3 md:gap-5 xl:gap-14 items-center ">
                 {
                     services.map((service, i) => (
                         <article key={i} onClick={() => setSelectedService(service)} className="overflow-hidden shadow-custom w-28 h-40 md:w-36 md:h-48 shadow-custom hover:cursor-pointer bg-white flex flex-col items-center py-8 px-6 rounded-2xl border-darkblue hover:scale-110 transition">
